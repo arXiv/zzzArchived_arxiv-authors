@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+nose2 = "*"
+coverage = "*"
+coveralls = "*"
+mypy = "*"
+pylint = "*"
+pydocstyle = "*"
+
+[packages]
+flask = "*"
+arxiv-base = "*"
+arxiv-auth = "==0.3.4rc1"
+pytz = "*"
+
+[requires]
+python_version = "3.6"
