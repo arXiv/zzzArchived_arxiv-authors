@@ -21,3 +21,39 @@ def service_status() -> Response:
     response.status_code = status_code
     response.headers.extend(headers)
     return response
+
+
+@blueprint.route('/eprint/<arxiv_id>/authors', methods=['GET'])
+@blueprint.route('/eprint/<arxiv_id_v>/authors', methods=['GET'])
+def get_authors(identifier: str) -> Response:
+    ...
+
+
+@blueprint.route('/eprint/<arxiv_id>/appellations', methods=['GET'])
+@blueprint.route('/eprint/<arxiv_id_v>/appellations', methods=['GET'])
+def get_appellations(identifier: str) -> Response:
+    ...
+
+
+@blueprint.route('/eprint/<arxiv_id>/appellations', methods=['POST'])
+@blueprint.route('/eprint/<arxiv_id_v>/appellations', methods=['POST'])
+def add_appellations(identifier: str) -> Response:
+    ...
+
+
+@blueprint.route('/eprint/<arxiv_id>/appellations', methods=['DELETE'])
+@blueprint.route('/eprint/<arxiv_id_v>/appellations', methods=['DELETE'])
+def delete_appellations(identifier: str) -> Response:
+    ...
+
+
+@blueprint.route('/eprint/<arxiv_id>/appellations/<appellation>', methods=['PUT'])
+@blueprint.route('/eprint/<arxiv_id_v>/appellations/<appellation>', methods=['PUT'])
+def update_appellation(identifier: str, appellation: str) -> Response:
+    ...
+
+
+@blueprint.route('/eprint/<arxiv_id>/appellations/<appellation>', methods=['DELETE'])
+@blueprint.route('/eprint/<arxiv_id_v>/appellations/<appellation>', methods=['DELETE'])
+def delete_appellation(identifier: str, appellation: str) -> Response:
+    ...
