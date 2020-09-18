@@ -1,3 +1,8 @@
+# Status
+This repo contains just a bare skeleton of a flask app. None of the requirements listed 
+here are implemented. Other than this README, there are only paths defined in 
+routes/api.py but no logic.
+
 # arXiv Authors
 
 The author identity service is responsible for mapping author name substrings
